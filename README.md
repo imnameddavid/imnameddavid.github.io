@@ -19,3 +19,9 @@ The pages will be in the folders corresponding to their name.
 - Time: ~2hrs
 - AI-Assisted?: 85%
 - Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours.
+
+### index.html
+- 2nd Page, home page
+- Time: will be constantly updated
+- AI-Assisted?: ?
+- Other Info: Not started
