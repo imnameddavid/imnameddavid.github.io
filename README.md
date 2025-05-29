@@ -12,6 +12,8 @@
 
 ## Pages Information
 
+The pages will be in the folders corresponding to their name.
+
 ### first.html
 - 1st Page
 - Time: ~2hrs
