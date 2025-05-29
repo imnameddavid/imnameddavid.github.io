@@ -2,42 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+  <title>S:/</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* makes sure content is vertically centered */
+  gap: 20px; /* spacing between box and video */
+}
+
+
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      padding: 20px;
+      font-family: 'Rubik', sans-serif;
+      background-color: #2a2b31;
     }
 
-    h1 {
-      font-size: 3em;
-      color: #007acc;
+    .text-box {
+      background-color: rgba(206, 206, 206, 0.5);
+      padding: 40px;
+      border-radius: 6px;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      max-width: 500px;
     }
 
-    .project {
-      margin-bottom: 20px;
+    .text-box h1 {
+      font-size: 2em;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow:
+    -1.5px -1.5px #000,
+     1.5px -1.5px #000,
+    -1.5px  1.5px #000,
+     1.5px  1.5px #000,
+     0px  0px 10px rgba(0,0,0,0.3);
     }
+
+    .text-box p {
+      font-size: 1em;
+      color: #ffffff;
+    }
+
+    .votd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+      border-radius: 12px;
+    }
+
   </style>
 </head>
+
 <body>
+  <div class="container">
+    <div class="text-box">
+      <h1>hi, my name is david.</h1>
+      <p>welcome to this <i>funny</i> website i made as a funny side project. i might get a domain for 'named studios.' and get an <b>ACTUAL PROPER</b> website!!! <s>this is strikethrough text</s><br><br>below is a random video that i made on my yt :)
+      </p>
+    </div>
 
-  <h1>hi, my name is david!</h1>
-  <p>im just a person... i guess lol</p>
-
-  <h2>my achievements</h2>
-
-  <div class="project">
-    <h3>exhibit a</h3>
-    <p>completed bronze dofe</p>
+    <div class="votd">
+      <iframe id="random-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
+  <script>
+  const videos = [
+    "yGH75L9A0fM",
+    "LwXlYQGob9E",
+    "KI4GIry9IXk"
+  ];
 
-  <div class="project">
-    <h3>exhibit b</h3>
-    <p>i own a youtube channel that amassed 1k subscribers from gaming content</p>
-  </div>
+  const randomIndex = Math.floor(Math.random() * videos.length);
+  const selectedVideoId = videos[randomIndex];
+  const iframe = document.getElementById("random-video");
 
+  iframe.src = `https://www.youtube.com/embed/${selectedVideoId}?rel=0`;
+  </script>
+
+  <img src="theayoface.jpg" alt="the ayo face" width="300" style="border-radius: 6px;">
+
+  
 </body>
 </html>
