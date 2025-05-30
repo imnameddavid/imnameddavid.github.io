@@ -19,9 +19,9 @@
 - Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and traces of JavaScript was also used in the making of this page.
 - https://imnameddavid.github.io/first.html
 
-### firstnoai.html 
+### cheatsheet.html 
 - 3rd Page
-- Time: ?
-- AI-Assisted?: aiming to be <5%
-- Other Info: not started
-- https://imnameddavid.github.io/firstnoai.html
+- Time: 2-3hrs
+- AI-Assisted?: 20% (Helped me identify some terms and made that gradient title)
+- Other Info: I finished the element list, now I will do CSS and JS usage
+- https://imnameddavid.github.io/cheatsheet.html
