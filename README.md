@@ -25,4 +25,11 @@
 - Time: ~2hrs
 - AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better.)
 - Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and traces of JavaScript was also used in the making of this page.
-- https://imnameddavid.github.io/first/first.html
+- https://imnameddavid.github.io/first.html
+
+### firstnoai.html 
+- 3rd Page
+- Time: ?
+- AI-Assisted?: aiming to be <5%
+- Other Info: not started
+- https://imnameddavid.github.io/firstnoai.html
