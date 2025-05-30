@@ -13,13 +13,11 @@
 
 ## Pages Information
 
-The pages will be in the folders corresponding to their name, except the index.html page.
-
 ### first.html 
 - 1st Page
 - Time: ~2hrs
-- AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better. It also added that video randomiser using JavaScript)
-- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours.
+- AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better.)
+- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and JavaScript was also used in the making of this page.
 - https://imnameddavid.github.io/first/first.html
 
 ### index.html
