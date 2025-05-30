@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #2a2b31;
+      color: #fff;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 1%;
+      font-size: 2vw
+    }
+
+    .big-text {
+        font-size: 5vw;
+        font-weight: bold;
+        background: linear-gradient(90deg, #fff, #a3ade6c7);
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: moveGradient 3s ease infinite;
+    }
+
+    .subtitle-text {
+        font-size: 3vw;
+        font-weight: bold;
+        background: linear-gradient(90deg, #fff, #a3ade6c7);
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: moveGradient 3s ease infinite;
+    }
+
+    @keyframes moveGradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .code-text {
+        font-family: monospace;
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    li {
+      margin-bottom: 3%;
+    }
+  </style>
+</head>
+
+<body>
+  <p class = big-text><b>hi, this is dave's cheatsheet!</b></p>
+  <br>
+  <b>This page was created to help me develop future websites, storing this page as a dictionary of elements, rules, attributes, syntax and other useful terminology for future reference.</b>
+  <br><br><hr><br>
+  <p class = subtitle-text><b>element list</b></p>
+  <br>
+  <ul class = code-text>
+    <li>&lt;h1&gt; &lt;/h1&gt; → <h1>H1 header</h1></li>
+    <li>&lt;h2&gt; &lt;/h2&gt; → <h2>H2 header</h2></li>
+    <li>&lt;h3&gt; &lt;/h3&gt; → <h3>H3 header</h3></li>
+    <li>&lt;h4&gt; &lt;/h4&gt; → <h4>H4 header</h4></li>
+    <li>&lt;h5&gt; &lt;/h5&gt; → <h5>H5 header</h5></li>
+    <li>&lt;h6&gt; &lt;/h6&gt; → <h6>H6 header</h6></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;i&gt; &lt;/i&gt; → <i>Italic</i></li>
+    <li>&lt;strong&gt; &lt;/strong&gt; → <strong>Semantic bold</strong></li>
+    <li>&lt;em&gt; &lt;/em&gt; → <em>Semantic bold</em></li>
+    <li>&lt;mark&gt; &lt;/mark&gt; → <mark>Highlighted text</mark></li>
+    <li>&lt;sup&gt; &lt;/sup&gt; → <sup>Superscript</sup></li>
+    <li>&lt;sub&gt; &lt;/sub&gt; → <sub>Subscript</sub></li>
+    <li>&lt;abbr title="Abbreviation with tooltip"&gt;AWT&lt;/abbr&gt; → <abbr title="Abbreviation with tooltip">AWT</abbr></li>
+    <li>&lt;blockquote&gt; &lt;/blockquote&gt; → <blockquote>Quoted text</blockquote></li>
+    <li>&lt;code&gt; &lt;/code&gt; → <code>Inline code (changes font to monospace and has no color unless styled with CSS)</code></li>
+    <li>&lt;pre&gt; &lt;/pre&gt; → <pre>Preformatted block of code</pre></li>
+    <li>&lt;div&gt; &lt;/div&gt; → <div>Generic block container</div></li>
+    <li>&lt;span&gt; &lt;/span&gt; → <span>Generic inline container</span></li>
+    <li>&lt;header&gt; &lt;/header&gt; → <header>Semantic layout tag for a header</header></li>
+    <li>&lt;footer&gt; &lt;/footer&gt; → <footer>Semantic layout tag for a footer</footer></li>
+    <li>&lt;main&gt; &lt;/main&gt; → <main>Semantic layout tag for the main part of a site</main></li>
+    <li>&lt;section&gt; &lt;/section&gt; → <section>Semantic layout tag for a section of the site</section></li>
+    <li>&lt;article&gt; &lt;/article&gt; → <article>Semantic layout tag for an article</article></li>
+    <li>&lt;nav&gt; &lt;/nav&gt; → <nav>Semantic layout tag for navigation, useful with links</nav></li>
+    <li>&lt;ul&gt; &lt;/ul&gt; → <ul>Unordered list (bullet points)</ul></li>
+    <li>&lt;ol&gt; &lt;/ol&gt; → <ol>Ordered list (numbered points)</ol></li>
+    <li>&lt;li&gt; &lt;/li&gt; → List item, requires to be placed in &lt;ul&gt; or &lt;ol&gt; for functionality</li>
+    <li>&lt;dl&gt; &lt;/dl&gt; → <dl>Description list, container that wraps the description list</dl></li>
+    <li>&lt;dt&gt; &lt;/dt&gt; → <dt>Description term, the item or keywords being described</dt></li>
+    <li>&lt;dd&gt; &lt;/dd&gt; → <dd>Description details, the explanation or definition of the term</dd></li>
+    <li>&lt;a href="https://google.com"&gt; → <a href="https://google.com">Hyperlink (this leads to google)</a></li>
+    <li>&lt;img src="assets/Image..png" alt="This is an image"&gt; &lt;/img&gt; → <img src="/assets/Image.png" alt="This is an image"></img></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+  </ul>
+</body>
+</html>
