@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cheatsheet</title>
+  <link rel="icon" href="favicon.ico" type="image/theayoface.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
   <style>
@@ -21,11 +22,11 @@
       padding-right: 3%;
       padding-top: 3%;
       padding-bottom: 1%;
-      font-size: 2vw
+      font-size: 200%
     }
 
     .big-text {
-        font-size: 5vw;
+        font-size: 300%;
         font-weight: bold;
         background: linear-gradient(90deg, #fff, #a3ade6c7);
         background-size: 800% 800%;
@@ -35,7 +36,7 @@
     }
 
     .subtitle-text {
-        font-size: 3vw;
+        font-size: 250%;
         font-weight: bold;
         background: linear-gradient(90deg, #fff, #a3ade6c7);
         background-size: 800% 800%;
@@ -58,12 +59,17 @@
 
     .code-text {
         font-family: monospace;
-        font-size: 2vw;
-        line-height: 3vw;
+        font-size: 150%;
+        line-height: 200%;
     }
 
     li {
-      margin-bottom: 3%;
+      margin-bottom: 2%;
+    }
+
+    audio{
+        transform: scale(1.5);
+        transform-origin: top left;
     }
   </style>
 </head>
@@ -85,7 +91,7 @@
     <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
     <li>&lt;i&gt; &lt;/i&gt; → <i>Italic</i></li>
     <li>&lt;strong&gt; &lt;/strong&gt; → <strong>Semantic bold</strong></li>
-    <li>&lt;em&gt; &lt;/em&gt; → <em>Semantic bold</em></li>
+    <li>&lt;em&gt; &lt;/em&gt; → <em>Semantic italic</em></li>
     <li>&lt;mark&gt; &lt;/mark&gt; → <mark>Highlighted text. <mark style="background-color: rgb(74, 61, 255); color: rgb(255, 255, 255);">CSS can be used to change the color.</mark></li>
     <li>&lt;sup&gt; &lt;/sup&gt; → <sup>Superscript</sup></li>
     <li>&lt;sub&gt; &lt;/sub&gt; → <sub>Subscript</sub></li>
@@ -108,14 +114,22 @@
     <li>&lt;dt&gt; &lt;/dt&gt; → <dt>Description term, the item or keywords being described</dt></li>
     <li>&lt;dd&gt; &lt;/dd&gt; → <dd>Description details, the explanation or definition of the term</dd></li>
     <li>&lt;a href="https://google.com"&gt; → <a href="https://google.com">Hyperlink (this leads to google)</a></li>
-    <li>&lt;img src="assets/Image..png" alt="This is an image" width="20%" height=auto&gt; &lt;/img&gt; → <img src="/assets/Image.png" alt="This is an image" width="20%" height=auto></img> Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
-    <li>&lt;audio&gt; &lt;/audio&gt; → <audio src="assets/audiofile.mp3" controls>Audio</audio> Sets an audio file.</li>
-    <li>&lt;video&gt; &lt;/video&gt; → <video src="assets/0530.mp4" controls>Bold</video>Sets a video file.</li>
-    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
-    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
-    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
-    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
-    <li>&lt;b&gt; &lt;/b&gt; → <b>Bold</b></li>
+    <li>&lt;img src="assets/Image..png" alt="This is an image" width="20%" height=auto&gt; &lt;/img&gt; → <br><img src="/assets/Image.png" alt="This is an image" width="20%" height=auto></img><br>Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
+    <li>&lt;audio src="assets/audiofile.mp3" controls&gt; &lt;/audio&gt; → <br><audio src="assets/audiofile.mp3" controls width="300%" height=auto>You can't see the video because your browser isn't supported.</audio><br>Sets an audio file.</li>
+    <li>&lt;video src="assets/0530.mp4" width="50%" height=auto controls&gt; &lt;/video&gt; → <br><video src="assets/0530.mp4" width="50%" height=auto controls>You can't see the video because your browser isn't supported.</video><br>Sets a video file.</li>
+    <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe width="560" height="315" src="https://www.youtube.com/embed/4OkNI-eESw8?si=zC9Ry88OQ0AnAZMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>Allows embeds. This is a YouTube example.</li>
+    <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4ThybwqgpfchRi215w37sM?utm_source=generator&theme=0" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br>Allows embeds. This is a Spotify example.</li>
+    <li>&lt;form&gt; &lt;/form&gt; → <form>Collects user input. Optionally uses &lt;input&gt;, &lt;label&gt;, &lt;textarea&gt;, &lt;select&gt; &lt;option&gt; or &lt;button&gt;.</form></li>
+    <li>&lt;br&gt; → <br>Line break</li>
+    <li>&lt;hr&gt; → <hr>Horizontal rule</li>
+    <li>&lt;meta&gt; → Metadata for the HTML page, like character encoding, controlling viewport on mobile devices, describing the pages for search results, author information, auto-refresh, redirect people and controls social media previews.</li>
+    <li>&lt;link&gt; → Connects the page to external resources, most commonly for loading stylesheets (CSS), icons or fonts.</li>
+    <li>&lt;script&gt; → Allows JS (JavaScript) to be used.</li>
+    <li>&lt;style&gt; → Allows CSS (Cascading Style Sheets) to be used.</li>
+    <li>&lt;title&gt; → The page title. You can also see it on the page's tab!</li>
   </ul>
+  <br><br>
+  <p class = subtitle-text><b>css usage (cascading style sheets)</b></p>
+  <br><hr><br><br>
 </body>
 </html>
