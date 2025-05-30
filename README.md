@@ -13,16 +13,16 @@
 
 ## Pages Information
 
-### first.html 
-- 1st Page
-- Time: ~2hrs
-- AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better.)
-- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and traces of JavaScript was also used in the making of this page.
-- https://imnameddavid.github.io/first/first.html
-
 ### index.html
 - 2nd Page, home page
 - Time: will be constantly updated
 - AI-Assisted?: ?
 - Other Info: Not started
 - https://imnameddavid.github.io/index.html
+
+### first.html 
+- 1st Page
+- Time: ~2hrs
+- AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better.)
+- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and traces of JavaScript was also used in the making of this page.
+- https://imnameddavid.github.io/first/first.html
