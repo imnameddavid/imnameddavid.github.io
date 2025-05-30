@@ -1,7 +1,7 @@
 # This repository is a collection of pages made by imnameddavid and 'named studios.' for their relevant projects.
   
   If you see this, I guess you're a type of guy who loves snooping around the internet, I guess.
-  However, if you're viewing this from https://imnameddavid.github.io/index/index.html, the home website is down unfortunately.
+  However, if you're viewing this from https://imnameddavid.github.io/index.html, the home website is down unfortunately.
 
 ## Open Source Information
 
@@ -27,4 +27,4 @@ The pages will be in the folders corresponding to their name, except the index.h
 - Time: will be constantly updated
 - AI-Assisted?: ?
 - Other Info: Not started
-- https://imnameddavid.github.io/index/index.html
+- https://imnameddavid.github.io/index.html
