@@ -64,12 +64,18 @@
     }
 
     li {
-      margin-bottom: 2%;
+      margin-bottom: 12px;
     }
 
     audio{
         transform: scale(1.5);
         transform-origin: top left;
+    }
+
+    img, video{
+      max-width: 25%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
@@ -114,7 +120,7 @@
     <li>&lt;dt&gt; &lt;/dt&gt; → <dt>Description term, the item or keywords being described</dt></li>
     <li>&lt;dd&gt; &lt;/dd&gt; → <dd>Description details, the explanation or definition of the term</dd></li>
     <li>&lt;a href="https://google.com"&gt; → <a href="https://google.com">Hyperlink (this leads to google)</a></li>
-    <li>&lt;img src="assets/Image..png" alt="This is an image" width="20%" height=auto&gt; &lt;/img&gt; → <br><img src="/assets/Image.png" alt="This is an image" width="20%" height=auto></img><br>Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
+    <li>&lt;img src="assets/Image..png" alt="This is an image"&gt; &lt;/img&gt; → <br><img src="/assets/Image.png" alt="This is an image"></img><br>Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
     <li>&lt;audio src="assets/audiofile.mp3" controls&gt; &lt;/audio&gt; → <br><audio src="assets/audiofile.mp3" controls width="300%" height=auto>You can't see the video because your browser isn't supported.</audio><br>Sets an audio file.</li>
     <li>&lt;video src="assets/0530.mp4" width="50%" height=auto controls&gt; &lt;/video&gt; → <br><video src="assets/0530.mp4" width="50%" height=auto controls>You can't see the video because your browser isn't supported.</video><br>Sets a video file.</li>
     <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe width="560" height="315" src="https://www.youtube.com/embed/4OkNI-eESw8?si=zC9Ry88OQ0AnAZMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>Allows embeds. This is a YouTube example.</li>
