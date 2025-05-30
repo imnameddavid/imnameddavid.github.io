@@ -17,7 +17,7 @@
 - 1st Page
 - Time: ~2hrs
 - AI-Assisted?: 85% (Basically made everything, I made some QOL changes to make it look better.)
-- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and JavaScript was also used in the making of this page.
+- Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours. CCS and traces of JavaScript was also used in the making of this page.
 - https://imnameddavid.github.io/first/first.html
 
 ### index.html
