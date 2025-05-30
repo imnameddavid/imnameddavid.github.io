@@ -1,7 +1,7 @@
 # This repository is a collection of pages made by imnameddavid and 'named studios.' for their relevant projects.
 
   If you see this, I guess you're a type of guy who loves snooping around the internet, I guess...
-  If you're viewing this from https://imnameddavid.github.io/index.html, the home website is down unfortunately.
+  If you're viewing this from https://imnameddavid.github.io/index/index.html, the home website is down unfortunately.
 
 ## Open Source Information
 
@@ -13,18 +13,18 @@
 
 ## Pages Information
 
-The pages will be in the folders corresponding to their name.
+The pages will be in the folders corresponding to their name, except the index.html page.
 
 ### first.html 
 - 1st Page
 - Time: ~2hrs
 - AI-Assisted?: 85%
 - Other Info: This is my first HTML page. I know some bits, but I'm gonna have to learn. I have definitely learnt something in two hours.
-- https://imnameddavid.github.io/first.html
+- https://imnameddavid.github.io/first/first.html
 
 ### index.html
 - 2nd Page, home page
 - Time: will be constantly updated
 - AI-Assisted?: ?
 - Other Info: Not started
-- https://imnameddavid.github.io/index.html
+- https://imnameddavid.github.io/index/index.html
