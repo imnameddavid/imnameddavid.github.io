@@ -22,7 +22,7 @@
       padding-right: 3%;
       padding-top: 3%;
       padding-bottom: 1%;
-      font-size: 200%
+      font-size: 150%
     }
 
     .big-text {
@@ -37,12 +37,21 @@
 
     .subtitle-text {
         font-size: 250%;
-        font-weight: bold;
+        font-weight: 900;
         background: linear-gradient(90deg, #fff, #a3ade6c7);
         background-size: 800% 800%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: moveGradient 3s ease infinite;
+    }
+
+    hr {
+      border: none;
+      height: 4px;
+      background: linear-gradient(90deg, #fff, #a3ade6c7);
+      background-size: 200% 200%;
+      animation: moveGradient 3s ease infinite;
+      margin: 3px auto;
     }
 
     @keyframes moveGradient {
@@ -59,7 +68,7 @@
 
     .code-text {
         font-family: monospace;
-        font-size: 150%;
+        font-size: 100%;
         line-height: 200%;
     }
 
@@ -77,16 +86,24 @@
       height: auto;
       display: block;
     }
+
+    table{
+      text-align: left;
+      width: 90%;
+    }
   </style>
 </head>
+
+<link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 
 <body>
   <p class = big-text><b>hi, this is dave's cheatsheet!</b></p>
   <br>
-  <b>This page was created to help me develop future websites, storing this page as a dictionary of elements, rules, attributes, syntax and other useful terminology for future reference.</b>
-  <br><br><hr><br>
-  <p class = subtitle-text><b>element list</b></p>
-  <br>
+  This page was created to help me develop future websites, storing this page as a dictionary of elements, rules, attributes, syntax and other useful terminology for future reference.
+  <br><br><br>
+  <p class = subtitle-text><b>element/tag list</b></p>
+  <br><hr><br>
   <ul class = code-text>
     <li>&lt;h1&gt; &lt;/h1&gt; → <h1>H1 header</h1></li>
     <li>&lt;h2&gt; &lt;/h2&gt; → <h2>H2 header</h2></li>
@@ -120,16 +137,17 @@
     <li>&lt;dt&gt; &lt;/dt&gt; → <dt>Description term, the item or keywords being described</dt></li>
     <li>&lt;dd&gt; &lt;/dd&gt; → <dd>Description details, the explanation or definition of the term</dd></li>
     <li>&lt;a href="https://google.com"&gt; → <a href="https://google.com">Hyperlink (this leads to google)</a></li>
-    <li>&lt;img src="assets/Image..png" alt="This is an image"&gt; &lt;/img&gt; → <br><img src="/assets/Image.png" alt="This is an image"></img><br>Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
-    <li>&lt;audio src="assets/audiofile.mp3" controls&gt; &lt;/audio&gt; → <br><audio src="assets/audiofile.mp3" controls width="300%" height=auto>You can't see the video because your browser isn't supported.</audio><br>Sets an audio file.</li>
-    <li>&lt;video src="assets/0530.mp4" width="50%" height=auto controls&gt; &lt;/video&gt; → <br><video src="assets/0530.mp4" width="50%" height=auto controls>You can't see the video because your browser isn't supported.</video><br>Sets a video file.</li>
+    <li>&lt;img src="assets/Image..png" alt="This is an image"&gt; &lt;/img&gt; → <br><img src="/assets/Image.png" alt="This is an image"></img>Sets an image. Src is the location of the file, alt is the text that is displayed for accessibility.</li>
+    <li>&lt;audio src="assets/audiofile.mp3" controls&gt; &lt;/audio&gt; → <br><audio src="assets/audiofile.mp3" controls width="300%" height=auto>You can't see the video because your browser isn't supported.</audio><br><br>Sets an audio file.</li>
+    <li>&lt;video src="assets/0530.mp4" width="50%" height=auto controls&gt; &lt;/video&gt; → <br><video src="assets/0530.mp4" width="50%" height=auto controls>You can't see the video because your browser isn't supported.</video>Sets a video file.</li>
     <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe width="560" height="315" src="https://www.youtube.com/embed/4OkNI-eESw8?si=zC9Ry88OQ0AnAZMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>Allows embeds. This is a YouTube example.</li>
-    <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4ThybwqgpfchRi215w37sM?utm_source=generator&theme=0" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br>Allows embeds. This is a Spotify example.</li>
+    <li>&lt;iframe...&gt; &lt;/iframe&gt; → <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4ThybwqgpfchRi215w37sM?utm_source=generator&theme=0" width="320" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br>Allows embeds. This is a Spotify example.</li>
     <li>&lt;form&gt; &lt;/form&gt; → <form>Collects user input. Optionally uses &lt;input&gt;, &lt;label&gt;, &lt;textarea&gt;, &lt;select&gt; &lt;option&gt; or &lt;button&gt;.</form></li>
     <li>&lt;br&gt; → <br>Line break</li>
     <li>&lt;hr&gt; → <hr>Horizontal rule</li>
     <li>&lt;meta&gt; → Metadata for the HTML page, like character encoding, controlling viewport on mobile devices, describing the pages for search results, author information, auto-refresh, redirect people and controls social media previews.</li>
     <li>&lt;link&gt; → Connects the page to external resources, most commonly for loading stylesheets (CSS), icons or fonts.</li>
+    <li>&lt;head&gt; → Contains metadata of pages. &lt;script&gt; and &lt;style&gt; are especially used here.</li>
     <li>&lt;script&gt; → Allows JS (JavaScript) to be used.</li>
     <li>&lt;style&gt; → Allows CSS (Cascading Style Sheets) to be used.</li>
     <li>&lt;title&gt; → The page title. You can also see it on the page's tab!</li>
@@ -137,5 +155,192 @@
   <br><br>
   <p class = subtitle-text><b>css usage (cascading style sheets)</b></p>
   <br><hr><br><br>
+  <h1>basics</h1>
+  <br>
+  CSS is used to control the appearance of HTML elements, like color, layout, spacing, fonts, animations and more. There are three ways to import CSS.
+  <br><br>
+  <b>1. Inline CSS</b> - is applied directly and is single-use. However, it is recommended to use IDs as they are more cleaner and easier to understand.
+  <br>
+  <pre><code class="language-html">&lt;p style="color: red;"&gt;Hello&lt;/p&gt;</code></pre>
+  <br>
+  <b>2. Internal CSS</b> - is placed inside a &lt;style&gt; tag in the &lt;head&gt; tag. Recommended for small projects or one-off styles.
+  <br>
+  <pre><code class="language-html">&lt;style&gt;
+    p {
+      color: red;
+    }
+&lt;/style&gt;</code></pre>
+  <br>
+  <b>3. External CSS</b> - loads preexisting styles from a separate <i>.css</i> file. Recommended for larger or multiple-page sites.
+  <pre><code class="language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+  <br>
+  <h1>selectors</h1>
+  <br>
+  Selectors are placed before the curly brackets. They are also placed in &lt;style&gt;.
+  <br>
+  This isn't a complete list. There are many basic selectors, combinators, attribute selectors, pseudo-classes (CSS2, 3, 4), pseudo-elements and functional selectors. According to Google, there are 60+ selectors.
+  <br><br>
+  <table border="1">
+    <tr style="background-color: rgb(56, 60, 119)">
+      <th>Selector Type</th>
+      <th>Example</th>
+      <th>Definition</th>
+    </tr>
+    <tr>
+      <th>Element</th>
+      <th>p</th>
+      <th>Targets all &lt;p&gt; tags</th>
+    </tr>
+    <tr>
+      <th>Class</th>
+      <th>.box</th>
+      <th>Targets elements with class="box". Reuseable</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>#main</th>
+      <th>Targets element with id="main". Should be used once. Better alternative to inline CSS</th>
+    </tr>
+    <tr>
+      <th>Universial</th>
+      <th>*</th>
+      <th>Targets all elements in the page</th>
+    </tr>
+    <tr>
+      <th>Descendant</th>
+      <th>div p</th>
+      <th>Targets &lt;p&gt; inside a &lt;div&gt;</th>
+    </tr>
+    <tr>
+      <th>Child</th>
+      <th>div > p</th>
+      <th>Direct child &lt;p&gt; of &lt;div&gt;, nothing else</th>
+    </tr>
+    <tr>
+      <th>Pseudo-class</th>
+      <th>a:hover</th>
+      <th>Styles &lt;a&gt; when hovered</th>
+    </tr>
+  </table>
+  <br>
+  <h1>(common) properties</h1>
+  <br>
+  These properties are placed inside the curly brackets to give the selectors those properties.
+  
+  By the way, this isn't a full list! There are tons to be discovered. According to Google, there are 200+, but don't be overwhelmed.
+  <br><br>
+  <table border="1">
+    <tr style="background-color: rgb(56, 60, 119)">
+      <th>Property</th>
+      <th>Example</th>
+      <th>Definition</th>
+    </tr>
+    <tr>
+      <th>color</th>
+      <th>color: red;</th>
+      <th>Text color</th>
+    </tr>
+    <tr>
+      <th>background</th>
+      <th>background-color: #fff;</th>
+      <th>Background color</th>
+    </tr>
+    <tr>
+      <th>font-size</th>
+      <th>font-size: 20%;</th>
+      <th>Size of text</th>
+    </tr>
+    <tr>
+      <th>margin</th>
+      <th>margin: 10px;</th>
+      <th>Space outside the element</th>
+    </tr>
+    <tr>
+      <th>padding</th>
+      <th>padding: 5px;</th>
+      <th>Space inside the element</th>
+    </tr>
+    <tr>
+      <th>border</th>
+      <th>border: 1px solid #000;</th>
+      <th>Border around the element</th>
+    </tr>
+    <tr>
+      <th>display</th>
+      <th>display: flex;</th>
+      <th>Layout behavior</th>
+    </tr>
+    <tr>
+      <th>position</th>
+      <th>position: absolute;</th>
+      <th>Positioning in the page</th>
+    </tr>
+    <tr>
+      <th>text-align</th>
+      <th>text-align: center;</th>
+      <th>Aligns text inside the element</th>
+    </tr>
+  </table>
+  <br>
+  <h1>'cascading' definition and priority of elements</h1>
+  <br>
+  The order is how CSS decides which rule (selector) is applied to an element if there is a conflict. There is an OoP (<b>order of priority</b>). This is why the C in CSS stands for 'Cascading', its meaning being that when multiple styles apply, the most specific, latest, and most powerful rule wins.
+  <br>
+  The order of specificity is listed on the following table.
+  <br><br>
+  <table border="1">
+    <tr style="background-color: rgb(56, 60, 119)">
+      <th>Type of Selector</th>
+      <th>Example</th>
+      <th>Priority</th>
+    </tr>
+    <tr>
+      <th>Inline Styles</th>
+      <th>style="" in HTML</th>
+      <th>Highest</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>#id</th>
+      <th>High</th>
+    </tr>
+    <tr>
+      <th>Class / Attribute / Pseudo-class</th>
+      <th>.class, a:hover</th>
+      <th>Medium</th>
+    </tr>
+    <tr>
+      <th>Element</th>
+      <th>p, div</th>
+      <th>Low</th>
+    </tr>
+    <tr>
+      <th>Universial</th>
+      <th>*</th>
+      <th>Lowest</th>
+    </tr>
+  </table>
+  <br>
+  Some other factors come into play when deciding the order.
+  <br><br>
+  <ol>
+    <li>Order - If two selectors have equal specificity, the one that appears later in the CSS wins priority.</li>
+    <li>Location - Inline CSS > Internal CSS > External CSS</li>
+    <li>!important - Overrides almost everything. This should we used as sparingly as possible. Here is an example of its use:
+      <br><br>
+      CSS
+      <pre><code class="language-css">p {
+  color: blue !important;
+}
+
+p#special {
+  color: red;
+}
+</code></pre>
+HTML
+<pre><code class="language-html">&lt;p id="special"&gt;This will be blue, not red!&lt;/p&gt;
+</code></pre>
+    </li>
+  </ol>
 </body>
 </html>
