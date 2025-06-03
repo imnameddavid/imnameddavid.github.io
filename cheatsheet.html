@@ -91,6 +91,37 @@
       text-align: left;
       width: 90%;
     }
+
+    .box-model * {
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+}
+.margin {
+  background: #d4e8ff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.border {
+  border: 5px solid #a0bad8;
+  padding: 20px;
+}
+.padding {
+  background: #7088bd;
+  padding: 20px;
+}
+.content {
+  background: #3b4f74;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
   </style>
 </head>
 
@@ -100,8 +131,8 @@
 <body>
   <p class = big-text><b>hi, this is dave's cheatsheet!</b></p>
   <br>
-  This page was created to help me develop future websites, storing this page as a dictionary of elements, rules, attributes, syntax and other useful terminology for future reference.
-  <br><br><br>
+  This page was created to help me develop future websites, storing this page as a dictionary of elements, rules, attributes, syntax and other useful terminology for future reference. When creating good-looking websites, you will need to learn HTML, CSS and JS. HTML is a markup language that defines the structure and content of a webpage, like headings, paragraphs, images and links. CSS is used to style that structure, which is used for controlling layout, colors, fonts, spacing and responsiveness to make the website look appealing. JS adds interactivity and dynamic behavior to your website, allowing the author of the website to create features like sliders, pop-ups, animations, games and real-time updates. These three languages form the foundation of modern web development.
+  <br><br>
   <p class = subtitle-text><b>element/tag list</b></p>
   <br><hr><br>
   <ul class = code-text>
@@ -284,7 +315,7 @@
   <br>
   <h1>'cascading' definition and priority of elements</h1>
   <br>
-  The order is how CSS decides which rule (selector) is applied to an element if there is a conflict. There is an OoP (<b>order of priority</b>). This is why the C in CSS stands for 'Cascading', its meaning being that when multiple styles apply, the most specific, latest, and most powerful rule wins.
+  The order is how CSS decides which rule (selector) is applied to an element if there is a conflict. There is an <b>order of priority</b>. This is why the C in CSS stands for 'Cascading', its meaning being that when multiple styles apply, the most specific, latest, and most powerful rule wins.
   <br>
   The order of specificity is listed on the following table.
   <br><br>
@@ -315,7 +346,7 @@
       <th>Low</th>
     </tr>
     <tr>
-      <th>Universial</th>
+      <th>Universal</th>
       <th>*</th>
       <th>Lowest</th>
     </tr>
@@ -341,6 +372,92 @@ HTML
 <pre><code class="language-html">&lt;p id="special"&gt;This will be blue, not red!&lt;/p&gt;
 </code></pre>
     </li>
+  </ol>
+  <br>
+  <p class = subtitle-text><b>helpful tips using html + css</b></p>
+  <br><hr><br>
+  <ol>
+    <li>When starting a new HTML file, use the box method. It is a core concept in CSS layout. Every HTML element is considered a rectangular box. The box model describes and calculates the spacing and dimension around that rectangular box.</li>
+    There are four elements in a box model:
+    <br>
+    Content - area where you place text, images, ect
+    <br>
+    Padding - space between content and border
+    <br>
+    Border - line around the padding/content
+    <br>
+    Margin - space outside the element
+    <br><br>
+    <div class="content">Content</div>
+    <br><br>
+    <div class="border">
+      <div class="content">Content with border</div>
+    </div>
+    <br><br>
+    <dv class="margin">
+      <dv class="border">
+        <dv class="content">Content with border + margin</dv>
+      </dv>
+    </dv>
+    <br><br>
+    <div class="margin">
+      <div class="border">
+        <div class="padding">
+          <div class="content">Content + padding + border + margin </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-model">
+      <div class="margin">
+        <div class="border">
+          <div class="padding">
+            <div class="content">Same as last but centered</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <pre><code class="language-html">&lt;div class="box-model"&gt;
+  &lt;div class="margin"&gt;
+    &lt;div class="border"&gt;
+      &lt;div class="padding"&gt;
+        &lt;div class="content"&gt; Content :) &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <pre><code class="language-css">.box-model * {
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+}
+.margin {
+  background: #d4e8ff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.border {
+  border: 5px solid #a0bad8;
+  padding: 20px;
+}
+.padding {
+  background: #7088bd;
+  padding: 20px;
+}
+.content {
+  background: #3b4f74;
+  height: 50px;
+  border-radius: 6px;
+}
+</code></pre>
+    <br>
+    <li>Use display: flex for easy layouts. Flex boxes help align items in rows or columns.</li>
+    <pre><code class="language-css">.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }</code></pre>
   </ol>
 </body>
 </html>
