@@ -1,6 +1,115 @@
 <!DOCTYPE html>
 <html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <title>named studios.</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        } 
+
+        body {
+            background-color: #2a2b31;
+            padding: 2%;
+            font-family: 'Rubik';
+            color: #fff;
+        }
+
+        .center-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            text-align: center;
+            justify-content: space-between;
+            width: 75%;
+            margin: 0 auto;
+            font-size: 5rem;
+            text-shadow: 0px 4px 10px #545e88;
+        }
+
+        .undertitle {
+            text-align: center;
+            width: 75%;
+            margin: 0 auto;
+            font-size: 3rem;
+        }
+
+        .videoitem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 560px;
+        }
+
+        .videosection {
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            border: none;
+        }
+
+        .videosection iframe {
+            border: none;
+            aspect-ratio: 16 / 9;
+            box-shadow: 0px 4px 10px #363c57;
+        }
+
+        .videotitle {
+            margin-top: 30px;
+            font-size: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+
+        b {
+            font-weight: 900;
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                width: 90%;
+                font-size: 2.5rem;
+            }
+
+            .undertitle {
+                width: 90%;
+                font-size: 1.5rem
+            }
+        }
+
+        </style>
+    </head>
     <body>
-        <p>Work in progress...</p>
+        <div class="title">welcome to <b>named studios</b>.</div>
+        <div class="undertitle">in the works by imnameddavid.</div>
+        <br>
+        <div class="center-wrapper">
+            <div class="videosection">
+                <div class="videoitem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LwXlYQGob9E?si=9niiy2aUl_0NHY2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="videotitle">featured from imnameddavid</p>
+                </div>
+                <div class="videoitem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R77IOKfjmjw?si=faHLm3vPGIwi03St" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="videotitle">featured from named studios.</p>
+                </div>
+                <div class="videoitem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WftIl6pCy2E?si=T1TPPDU-3emAxvYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="videotitle">filler video (in case anything new pops up)</p>
+                </div>
+                <p>GET HYPE!!!</p>
+            </div>
+        </div>
     </body>
 </html>
