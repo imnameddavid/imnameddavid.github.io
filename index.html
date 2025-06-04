@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>named studios.</title>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/namedstudios..png" type="image/png">
         <style>
         * {
             margin: 0;
@@ -50,7 +51,7 @@
         .videosection {
             width: 55%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 20px;
             padding: 20px;
             border: none;
@@ -59,7 +60,7 @@
         .videosection iframe {
             border: none;
             aspect-ratio: 16 / 9;
-            box-shadow: 0px 4px 10px #363c57;
+            box-shadow: 0px 4px 100px #363c57;
         }
 
         .videotitle {
@@ -76,6 +77,28 @@
             font-weight: 900;
         }
 
+        .socialiconlist {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socialicon {
+            box-shadow: 0px 0px 100px #363c57;
+        }
+
+        .socialstitle {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .socialicon a:hover img {
+            transform: scale(1.2);
+            filter: brightness(1.2)
+        }
+
         @media (max-width: 600px) {
             .title {
                 width: 90%;
@@ -88,11 +111,28 @@
             }
         }
 
+        @media (max-width: 1800px) {
+            .videosection {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .videoitem {
+                width: 90%;
+            }
+
+            .videoitem iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
         </style>
     </head>
     <body>
         <div class="title">welcome to <b>named studios</b>.</div>
-        <div class="undertitle">in the works by imnameddavid.</div>
+        <div class="undertitle">currently in development. founded by imnameddavid.</div>
         <br>
         <div class="center-wrapper">
             <div class="videosection">
@@ -108,8 +148,49 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/WftIl6pCy2E?si=T1TPPDU-3emAxvYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="videotitle">filler video (in case anything new pops up)</p>
                 </div>
-                <p>GET HYPE!!!</p>
             </div>
         </div>
+        <div class="socialiconlist">
+            <div class="socialicon">
+                <a href="https://www.youtube.com/@namedstudios" target="_blank">
+                    <img height="32" width="32" src="https://cdn.simpleicons.org/YouTube/eeeeee" />
+                </a>
+            </div>
+            <div class="socialicon">
+                <a href="www.roblox.com/communities/35029215/named-studios" target="blank">
+                    <img height="32" width="32" src="https://cdn.simpleicons.org/Roblox/eeeeee" />
+                </a>
+            </div>
+            <div class="socialicon">
+                <a href="https://www.discord.gg/NQPKjBwkcd" target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/Discord/eeeeee" />
+                </a>
+            </div>
+        </div>
+        <p class="socialstitle">socials/named studios.</p>
+        <br><br>
+        <div class="socialiconlist">
+            <div class="socialicon">
+                <a href="https://www.youtube.com/@Davidka0201" target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/youtube/eeeeee" />
+                </a>
+            </div>
+            <div class="socialicon">
+                <a href="https://www.roblox.com/users/936452852/profile" target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/roblox/eeeeee" />
+                </a>
+            </div>
+            <div class="socialicon">
+                <a href="https://www.tiktok.com/@imnamedavid" target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/tiktok/eeeeee" />
+                </a>
+            </div>
+            <div class="socialicon">
+                <a href="https://steamcommunity.com/id/PersonNamedDavid/" target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/steam/eeeeee" />
+                </a>
+            </div>
+        </div>
+        <p class="socialstitle">socials/imnameddavid</p>
     </body>
 </html>
