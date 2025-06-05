@@ -13,11 +13,19 @@
             scroll-behavior: smooth;
         } 
 
+        hr {
+            border: none;
+            background-color: #363c57;
+            height: 4px;
+            margin: 20px 0;
+        }
+
         body {
             background-color: #2a2b31;
             padding: 2%;
             font-family: 'Rubik';
             color: #fff;
+            font-size: 2rem;
         }
 
         .center-wrapper {
@@ -53,7 +61,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            padding: 0.5rem;
             border: none;
         }
 
@@ -71,7 +79,20 @@
             flex-direction: column;
             justify-content: center;
         }
-    
+
+        .explanationbox {
+            width: 50%;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #363c57;
+            border-radius: 8px;
+            box-shadow: 0px 4px 100px #363c57;
+        }
+
+        .explanationtitle {
+            font-size: 4rem;
+            text-align: center;
+        }
 
         b {
             font-weight: 900;
@@ -82,6 +103,7 @@
             flex-direction: row;
             justify-content: center;
             gap: 20px;
+            margin-top: 20px;
         }
 
         .socialicon {
@@ -97,6 +119,31 @@
         .socialicon a:hover img {
             transform: scale(1.2);
             filter: brightness(1.2)
+        }
+
+        .signature {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .signature .icon {
+            height: 2rem;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .footnote {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff8a;
+            font-size: 1rem;
+            text-align: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         @media (max-width: 600px) {
@@ -126,6 +173,10 @@
                 width: 100%;
                 height: auto;
             }
+
+            .explanationbox {
+                width: 90%;
+            }
         }
 
         </style>
@@ -150,6 +201,31 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="explanationbox">
+            <p class="explanationtitle">
+                what exactly is <b>named studios.</b>?
+            </p>
+            <br>
+            Before I explain, yes; the full stop is included in the name. I thought it looked cool, okay?
+            <br><br>
+            'named studios.' is a creative outlet made by me because I was bored one day.
+            It is mostly a solo project but my friends sometimes join in on it.
+            It is a space for me to experiment and create many things - videos, game projects, websites... you get it.
+            This is mostly casual and passion-driven rather than aiming to be commercial.
+            I also made this because I realised I have started many things, but have never gotten the passion to finish those particular things.
+            If you know about dave's ultimate dco, you have elite ball knowledge.
+            If you also know about Scrapbook... you don't lmao.
+            <br><br>
+            The content I will put out will be driven with quality over quantity.
+            I'm open to make this a big thing later, if I do get the chance that is, but for now, I'm just having fun.
+            I am excited to do many things, either creating things from scratch or developing things in existing games.
+            <br><br>
+            <p class="signature">
+                - imnameddavid <img src="assets/theayoface.jpg" alt="S:/" class="icon">
+            </p>
+        </div>
+        <br>
         <div class="socialiconlist">
             <div class="socialicon">
                 <a href="https://www.youtube.com/@namedstudios" target="_blank">
@@ -168,7 +244,7 @@
             </div>
         </div>
         <p class="socialstitle">socials/named studios.</p>
-        <br><br>
+        <br>
         <div class="socialiconlist">
             <div class="socialicon">
                 <a href="https://www.youtube.com/@Davidka0201" target="_blank">
@@ -192,5 +268,14 @@
             </div>
         </div>
         <p class="socialstitle">socials/imnameddavid</p>
+        <br>
+        <hr>
+        <p class="footnote">
+            <img height="24" width="24" src="https://cdn.simpleicons.org/HTML5/ffffff8a" />
+            <img height="24" width="24" src="https://cdn.simpleicons.org/CSS/ffffff8a" />
+            html and css was used for this website! :) 
+            [website version: v1.0]
+            s:/
+        </p>
     </body>
 </html>
