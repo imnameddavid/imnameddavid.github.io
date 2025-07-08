@@ -57,11 +57,13 @@
         }
 
         .videosection {
-            width: 55%;
-            display: flex;
-            justify-content: center;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
             gap: 20px;
             padding: 0.5rem;
+            margin: 0 auto;
             border: none;
         }
 
@@ -72,6 +74,7 @@
         }
 
         .videotitle {
+            min-height: 70px;
             margin-top: 30px;
             font-size: 2rem;
             text-align: center;
@@ -81,7 +84,7 @@
         }
 
         .explanationbox {
-            width: 50%;
+            width: 1520px;
             padding: 20px;
             margin: 20px auto;
             background-color: #363c57;
@@ -156,11 +159,25 @@
                 width: 90%;
                 font-size: 1.5rem
             }
+
+            .videosection {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .videosection {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .videosection > .videoitem:nth-child(3) {
+                grid-column: 1 / -1;
+                justify-self: center;
+            }
         }
 
         @media (max-width: 1800px) {
             .videosection {
-                flex-direction: column;
                 align-items: center;
                 width: 100%;
             }
@@ -188,11 +205,11 @@
         <div class="center-wrapper">
             <div class="videosection">
                 <div class="videoitem">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LwXlYQGob9E?si=9niiy2aUl_0NHY2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCqIVQTkg-U?si=rz8IN8rorQ_AMpJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="videotitle">featured from imnameddavid</p>
                 </div>
                 <div class="videoitem">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R77IOKfjmjw?si=faHLm3vPGIwi03St" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-IRZquC6ss?si=pMkg6H9VMHL0CpHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="videotitle">featured from named studios.</p>
                 </div>
                 <div class="videoitem">
@@ -224,6 +241,10 @@
             <p class="signature">
                 - imnameddavid <img src="assets/theayoface.jpg" alt="S:/" class="icon">
             </p>
+        </div>
+        <br>
+        <div class="center-wrapper">
+            <iframe src="https://discord.com/widget?id=1378785259482775774&theme=dark" width="500" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
         <br>
         <div class="socialiconlist">
@@ -273,9 +294,7 @@
         <p class="footnote">
             <img height="24" width="24" src="https://cdn.simpleicons.org/HTML5/ffffff8a" />
             <img height="24" width="24" src="https://cdn.simpleicons.org/CSS/ffffff8a" />
-            html and css was used for this website! :) 
-            [website version: v1.0]
-            s:/
+            V2
         </p>
     </body>
 </html>
