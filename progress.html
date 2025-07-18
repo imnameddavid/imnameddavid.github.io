@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .project {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>My Project Tracker</h1>
+
+<div id="idea" class="section">
+  <h2>Idea</h2>
+  <div class="projects-list"></div>
+</div>
+
+<div id="planning" class="section">
+  <h2>Planning</h2>
+  <div class="projects-list"></div>
+</div>
+
+<div id="recording" class="section">
+  <h2>Recording</h2>
+  <div class="projects-list"></div>
+</div>
+
+<div id="editing" class="section">
+  <h2>Editing</h2>
+  <div class="projects-list"></div>
+</div>
+
+<div id="done" class="section">
+  <h2>Done</h2>
+  <div class="projects-list"></div>
+</div>
+
+<script>
+// Example projects data: name + stage number (1 to 5)
+const projects = [
+  { name: "Project X", stage: 1 },
+  { name: "Project Y", stage: 3 },
+  { name: "Project Z", stage: 2 },
+  { name: "Video A", stage: 4 },
+  { name: "Video B", stage: 5 },
+  { name: "Idea for B", stage: 1 },
+];
+
+// Map stage number to section ID
+const stageToSection = {
+  1: "idea",
+  2: "planning",
+  3: "recording",
+  4: "editing",
+  5: "done"
+};
+
+function renderProjects() {
+  // Clear all project lists
+  for (const key in stageToSection) {
+    const section = document.getElementById(stageToSection[key]);
+    section.querySelector(".projects-list").innerHTML = "";
+  }
+
+  // Add each project to its corresponding section
+  projects.forEach(proj => {
+    const sectionId = stageToSection[proj.stage];
+    const container = document.getElementById(sectionId).querySelector(".projects-list");
+
+    const projDiv = document.createElement("div");
+    projDiv.className = "project";
+    projDiv.textContent = proj.name;
+    container.appendChild(projDiv);
+  });
+}
+
+renderProjects();
+</script>
+
+</body>
+</html>
+
